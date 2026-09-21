@@ -79,7 +79,7 @@ function normalizeBody(value: unknown): string | undefined {
   return body && body !== '[deleted]' && body !== '[removed]' ? body : undefined;
 }
 
-function mapPostData(data: JsonObject): RedditPost {
+export function mapPostData(data: JsonObject): RedditPost {
   const id = asString(data.id);
   const subreddit = asString(data.subreddit);
   const title = asString(data.title);
