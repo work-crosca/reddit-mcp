@@ -9,7 +9,7 @@ const reddit: RedditClient = {
     items: [
       {
         id: 'abc123',
-        kind: 'post',
+        kind: 'post' as const,
         subreddit: input.subreddit ?? 'FanFiction',
         title: 'AO3 alternatives?',
         score: 10,
