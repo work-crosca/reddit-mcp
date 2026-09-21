@@ -745,7 +745,15 @@ Private messaging should remain excluded unless a concrete legitimate use case i
 
 Only if a UI materially improves the workflow.
 
-The connector should remain fully useful as a normal MCP server without UI components.
+UI implementation requirements:
+
+- develop UI components Storybook-first
+- reuse Ficora's existing product/design rules and `product_design.md` as the visual baseline
+- reuse existing Ficora design tokens/patterns where they are applicable
+- do not introduce a parallel visual language for the connector without a concrete product reason
+- keep MCP tools fully usable without UI components
+
+v0.1 must not introduce UI solely for presentation purposes.
 
 ---
 
